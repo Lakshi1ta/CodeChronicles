@@ -209,85 +209,61 @@ span{
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
 }
-/* General styles for smaller screens */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+/* Default styles (for larger devices) */
 
-/* Default (Desktop) */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Tablets (768px - 1024px) */
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 15px;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-
-  .navbar a {
-    margin-bottom: 10px;
-  }
-
-  .section {
-    padding: 15px;
-    text-align: center;
-  }
-}
-
-/* Mobile (480px - 767px) */
-@media screen and (max-width: 767px) {
-  .container {
+/* Tablet devices */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
     padding: 10px;
   }
 
-  .header {
-    font-size: 1.8rem;
-  }
-
-  .section {
-    padding: 10px;
-  }
-
-  .navbar {
+  header {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .navbar a {
-    font-size: 1rem;
-    padding: 5px;
-  }
-}
-
-/* Small Phones (max 479px) */
-@media screen and (max-width: 479px) {
-  .header {
-    font-size: 1.5rem;
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .section {
-    padding: 5px;
-  }
-
-  .navbar a {
-    font-size: 0.9rem;
-  }
-}
-
-/* Footer Adjustments */
-@media screen and (max-width: 767px) {
-  .footer {
-    text-align: center;
-    font-size: 0.9rem;
+  .portfolio-section {
+    grid-template-columns: 1fr;
     padding: 10px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .portfolio-section {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
