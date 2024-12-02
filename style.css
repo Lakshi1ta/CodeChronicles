@@ -209,82 +209,72 @@ span{
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
 }
-/* Desktop Default */
-body {
-    font-size: 16px;
-}
-
-/* Tablets (768px - 1024px) */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
+
     .navlinks {
-        width: 100%;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap: 1rem;
     }
-    .Heading {
-        margin-left: 2rem;
-        font-size: 2rem;
-    }
+
     .all {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
+
     .buttons {
-        margin-left: 0;
-        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
 
-/* Mobile (480px - 767px) */
-@media screen and (max-width: 767px) {
-    .navbar {
-        padding: 10px;
-    }
+/* Mobile Devices */
+@media (max-width: 768px) {
     .Heading {
-        font-size: 1.8rem;
-        text-align: center;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
     }
+
     .para {
-        font-size: 1rem;
-        margin: 1rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     }
+
+    .btn {
+        padding: 0.4rem 1rem;
+    }
+
     .icons {
-        flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.8rem;
     }
-    .btn a {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    .all img {
-        width: 80%;
-        height: auto;
+
+    .icons i {
+        font-size: 1.5rem;
     }
 }
 
-/* Small Phones (max 479px) */
-@media screen and (max-width: 479px) {
-    .Heading {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 1rem 0;
+/* Small Phones */
+@media (max-width: 480px) {
+    .navlinks a {
+        font-size: 0.9rem;
     }
-    .navlinks {
-        font-size: 0.8rem;
+
+    .btn a {
+        font-size: 0.9rem;
     }
+
+    .icons i {
+        font-size: 1.2rem;
+    }
+
     .para {
         font-size: 0.9rem;
-        margin: 1rem;
     }
-    .btn {
-        flex-direction: column;
-        align-items: center;
-    }
-    .icons i {
-        font-size: 20px;
+
+    .navbar {
+        padding: 1rem;
     }
 }
