@@ -209,96 +209,82 @@ span{
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
 }
-/* General (Desktop and larger screens) */
-.all {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* Desktop Default */
+body {
+    font-size: 16px;
 }
 
-.all img {
-    height: 30rem;
-    width: 30rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    opacity: 0.5;
-}
-
-.all img:hover {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Tablet Screens (768px - 1024px) */
+/* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    .all {
+    .navbar {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
-
-    .Heading {
-        margin: 2rem 0;
-        text-align: center;
-        font-size: 2.5rem;
-    }
-
-    .para {
-        margin: 1rem;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    .all img {
-        height: 25rem;
-        width: 25rem;
-        margin: 1rem 0;
-    }
-}
-
-/* Mobile Screens (480px - 767px) */
-@media screen and (max-width: 767px) {
-    .all {
+    .navlinks {
+        width: 100%;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .Heading {
-        margin: 1rem 0;
         text-align: center;
+    }
+    .Heading {
+        margin-left: 2rem;
         font-size: 2rem;
     }
-
-    .para {
-        margin: 1rem;
-        text-align: center;
-        font-size: 1rem;
+    .all {
+        flex-direction: column;
+        align-items: center;
     }
+    .buttons {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
 
+/* Mobile (480px - 767px) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 10px;
+    }
+    .Heading {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .para {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .btn a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
     .all img {
-        height: 20rem;
-        width: 20rem;
-        margin: 1rem 0;
+        width: 80%;
+        height: auto;
     }
 }
 
 /* Small Phones (max 479px) */
 @media screen and (max-width: 479px) {
-    .all {
+    .Heading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .navlinks {
+        font-size: 0.8rem;
+    }
+    .para {
+        font-size: 0.9rem;
+        margin: 1rem;
+    }
+    .btn {
         flex-direction: column;
         align-items: center;
     }
-
-    .Heading {
-        font-size: 1.8rem;
-    }
-
-    .para {
-        font-size: 0.9rem;
-    }
-
-    .all img {
-        height: 15rem;
-        width: 15rem;
-        margin: 1rem 0;
+    .icons i {
+        font-size: 20px;
     }
 }
