@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.mate-sc-regular {
+    font-family: "Mate SC", serif;
+    font-weight: 900;
+    font-style:oblique;
+  }
+  
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "mulish",serif;
+}
+img{
+    height: 60px;
+}
+.navbar{
+    height: 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.navlinks{
+    font-size: 1.4rem;
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body{
+    background-color: #081B28;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.link{
+    color: #EAE7CA;
+    font-family: "Mulish";
+    font-weight: 600;
+}
+.link:hover{
+    color:#70d6ff;
+}
+.Heading{
+    margin-top: 8rem;
+    margin-left: 8rem;
+    font-size: 3rem;
+    color: #EAE7CA;
+    
+}
+.passion{
+    margin-left: 8rem;
+    /* text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff; */
+}
+
+
+/* word flips */
+
+.wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #eee;
+    display: flex;
+    margin-left: 8rem;
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+        li {
+            font-size: 38px;
+            font-family: "roboto";
+            color: #70d6ff;
+            font-weight: 700;
+            padding: 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+    }
+}
+
+span{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0.72rem;
+}
+.para{
+    color: #70d6ff;
+    margin-left: 8rem;
+    margin:3rem 3rem 3rem 8rem;
+    font-family: "roboto";
+    font-size: 23px;
+}
+.all{
+    display: flex;
+ justify-content: space-evenly;
+ img {
+        height: 30rem;
+        width: 30rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        opacity: 0.5;
+     }
+}
+.all img:hover{
+       opacity: 1; transition: opacity 0.5s ease-in-out;
+}
+.buttons{
+    margin-left:14rem ;
+    margin-right: 4rem;
+    padding: 2px;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+}
+.icons{
+    margin-left:17rem;
+    margin-right: 17rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    border:#70d6ff 2px solid;
+    border-radius: 5px;
+    a{color: #EAE7CA;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 2rem;
+    }
+}
+.btn:hover{
+    background-color: #70d6ff;
+    a:hover{
+        color: #081B28;
+    }
+}
+.languages{
+    font-size: 20px;
+    display: grid;
+    grid-template-rows:50px 50px;
+    grid-template-columns: 25% 25% 25%;
+}
+.text{
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.flip2 { animation: flip2 1s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 4s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 7s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip5 { animation: flip5 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -180px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -360px; }
+}
+
+@keyframes flip5 {
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    20% { margin-top: -360px; }
+    25% { margin-top: -270px; }
+    40% { margin-top: -270px; }
+    45% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -450px; }
+}
