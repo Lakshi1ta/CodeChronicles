@@ -209,61 +209,96 @@ span{
     99.99% { margin-top: 0px; }
     100% { margin-top: -450px; }
 }
-/* Default styles (for larger devices) */
-
-/* Tablet devices */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  header {
+/* General (Desktop and larger screens) */
+.all {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .portfolio-section {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
-  footer {
-    text-align: center;
-  }
 }
 
-/* Mobile devices */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding: 5px;
-  }
+.all img {
+    height: 30rem;
+    width: 30rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.5;
+}
 
-  header h1 {
-    font-size: 20px;
-  }
+.all img:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
 
-  nav ul {
-    gap: 5px;
-  }
+/* Tablet Screens (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .all {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .portfolio-section {
-    grid-template-columns: 1fr;
-    padding: 5px;
-  }
+    .Heading {
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
 
-  .portfolio-item {
-    margin-bottom: 20px;
-  }
+    .para {
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
-  footer {
-    font-size: 12px;
-  }
+    .all img {
+        height: 25rem;
+        width: 25rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Mobile Screens (480px - 767px) */
+@media screen and (max-width: 767px) {
+    .all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Heading {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .para {
+        margin: 1rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .all img {
+        height: 20rem;
+        width: 20rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Small Phones (max 479px) */
+@media screen and (max-width: 479px) {
+    .all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Heading {
+        font-size: 1.8rem;
+    }
+
+    .para {
+        font-size: 0.9rem;
+    }
+
+    .all img {
+        height: 15rem;
+        width: 15rem;
+        margin: 1rem 0;
+    }
 }
